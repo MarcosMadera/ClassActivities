@@ -1,0 +1,94 @@
+/* General Styles */
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto; /* Ensures images maintain their aspect ratio */
+}
+
+
+div {
+  border: 2px solid burlywood;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+#introPic {
+  float: none; /* Changed from 'left' to adapt better on smaller screens */
+  width: 50%;
+  height: 50%;
+
+}
+
+#about-me {
+  float: none; /* Changed from 'right' */
+  margin: 0 auto;
+  text-align: left;
+}
+
+#about-me > li {
+  padding: 5px;
+  list-style-type: none; /* Optional: Improves aesthetics */
+}
+
+#pro {
+  width: auto;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for iPhone 6/7/8 */
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  h1 {
+    font-size: 40px; /* Scale down header size */
+  }
+
+  #introPic {
+    width: 100%;
+    margin-bottom: 20px;
+    image-orientation: center;
+    /* Add space between the image and text */
+  }
+
+  #about-me {
+    text-align: left;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  div {
+    margin: 10px auto;
+    text-align: left;
+
+  }
+
+  a {
+    font-size: 14px; /* Adjust link font size */
+  }
+}
+
